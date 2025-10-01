@@ -117,10 +117,49 @@
       font-size: 0.9rem;
       color: #888;
     }
-    @media (max-width: 600px) {
-      h1 { font-size: 2rem; }
-      .btn { font-size: 0.9rem; }
+
+    /* --- Modal contraseña --- */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
     }
+    .modal-content {
+      background: #111;
+      padding: 20px;
+      border-radius: 15px;
+      border: 2px solid #0ff;
+      box-shadow: 0 0 15px #0ff;
+      text-align: center;
+      max-width: 300px;
+      width: 90%;
+    }
+    .modal input {
+      padding: 10px;
+      margin: 10px 0;
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #0ff;
+      background: #222;
+      color: #fff;
+    }
+    .modal button {
+      padding: 8px 15px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #0ff;
+      color: #000;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+    .modal button:hover { background: #00cccc; }
   </style>
 </head>
 <body>
@@ -148,7 +187,7 @@
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtSsD_I85MznoyUIZXUHaRBzfiRPL4DNZhjw&s" alt="YouTube">
     </a>
     <a href="https://www.instagram.com/sep.comu" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
     </a>
     <a href="https://discord.gg/YmwsAAC6Pu" target="_blank">
       <img src="https://play-lh.googleusercontent.com/s7SUyvveKqEgpwVz74VDeQWGGhob_Vyj9_ubJGwUPvAXpPe4xAJeZ0l3pF2F7njB_NYM" alt="Discord">
@@ -156,6 +195,16 @@
   </div>
 
   <div class="footer">© 2025 SEP Minecraft | Página creada por Yalmil</div>
+
+  <!-- Modal contraseña -->
+  <div id="passwordModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <h3>🔒 Ingresa la contraseña</h3>
+      <input type="password" id="passwordInput" placeholder="Contraseña">
+      <button id="passwordSubmit">Aceptar</button>
+      <button id="passwordCancel">Cancelar</button>
+    </div>
+  </div>
 
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
@@ -178,6 +227,11 @@
     const lista = document.getElementById("anuncios-lista");
     const editIcon = document.getElementById("editIcon");
 
+    const passwordModal = document.getElementById("passwordModal");
+    const passwordInput = document.getElementById("passwordInput");
+    const passwordSubmit = document.getElementById("passwordSubmit");
+    const passwordCancel = document.getElementById("passwordCancel");
+
     onValue(anunciosRef, (snapshot) => {
       const data = snapshot.val();
       lista.innerHTML = "";
@@ -187,27 +241,26 @@
           li.textContent = anuncio;
           lista.appendChild(li);
         });
-      } else {
-        const defaultAnuncios = [
-          "🛠 El servidor estará en mantenimiento el 30 de julio a las 10:00 PM.",
-          "🎉 Nuevo evento de supervivencia el fin de semana. ¡Premios exclusivos!",
-          "🆕 Hemos actualizado los plugins y agregado nuevos minijuegos."
-          "‼️Gente recuerden votar por lo que prefieren la tematica del evento de mc bedrock en discord sep"
-        ];
-        defaultAnuncios.forEach(anuncio => {
-          const li = document.createElement("li");
-          li.textContent = anuncio;
-          lista.appendChild(li);
-        });
       }
     });
 
     editIcon.addEventListener("click", () => {
-      const password = prompt("🔒 Contraseña para editar:");
+      passwordModal.style.display = "flex";
+      passwordInput.value = "";
+      passwordInput.focus();
+    });
+
+    passwordCancel.addEventListener("click", () => {
+      passwordModal.style.display = "none";
+    });
+
+    passwordSubmit.addEventListener("click", () => {
+      const password = passwordInput.value;
       if (password !== "veggetita") {
         alert("❌ Contraseña incorrecta.");
         return;
       }
+      passwordModal.style.display = "none";
       const actuales = Array.from(lista.children).map(li => li.textContent).join("\n");
       const nuevos = prompt("📝 Edita los anuncios (uno por línea):", actuales);
       if (nuevos !== null) {
@@ -225,9 +278,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
