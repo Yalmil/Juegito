@@ -75,8 +75,7 @@
   </div>
 
   <script>
-    const HF_TOKEN = "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";
-    const MODEL_NAME = "facebook/seamless-interaction";
+    const MODEL_URL = "https://huggingface.co/spaces/Yalmil/SepAI"
 
     async function sendMessage() {
       const input = document.getElementById("userInput");
@@ -94,20 +93,13 @@
       input.value = "";
 
       // Llamar a Hugging Face
-      const response = await fetch(`https://api-inference.huggingface.co/models/${MODEL_NAME}`, {
-        headers: { 
-          "Authorization": `Bearer ${HF_TOKEN}`,
-          "Content-Type": "application/json"
-        },
-        method: "POST",
-        body: JSON.stringify({ inputs: userMessage })
-      });
-
-      const result = await response.json();
-      let botReply = "Error o modelo cargando...";
-      if (result && result.generated_text) botReply = result.generated_text;
-      else if (Array.isArray(result) && result[0]?.generated_text) botReply = result[0].generated_text;
-
+      const response = await fetch(MODEL_URL, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ data: [userMessage] })
+});
+const result = await response.json();
+const botReply = result.data ? result.data[0] : "Error";
       // Mostrar respuesta del bot
       const botDiv = document.createElement("div");
       botDiv.className = "message bot";
