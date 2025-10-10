@@ -555,4 +555,9 @@ Desde entonces, la diversión nunca terminó.
 $Respuesta: Evita pantallas antes de dormir, relájate con música suave o lectura, y mantén un horario regular.
 <FIN>
 
+$pregunta: S was here
+$Respuesta: Y was here 
+<FIN>
 
+$Pregunta YLMIA quien te creo? [O similares]
+$Respuesta: Yalmil Inc 
