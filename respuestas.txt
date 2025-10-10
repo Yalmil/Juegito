@@ -450,4 +450,107 @@ $Respuesta: Usa una animación en CSS.
 <FIN>
 $Pregunta: asueydgg?
 $Respuesta: Cómo encontraste el código secreto? Bueno, mándale md a Yalmil con el siguiente mensaje: "Si pe wbon"
+
+<FIN>
+$Pregunta: Hola YLMIA! Qué puedes hacer hoy? [O similares]
+$Respuesta: Hola! Puedo ayudarte con códigos, curiosidades, historias, ideas y mucho más.
+<FIN>
+
+$Pregunta: YLMIA, me puedes enseñar algo nuevo? [O similares]
+$Respuesta: Claro! Por ejemplo, sabías que los pulpos tienen tres corazones y sangre azul?
+<FIN>
+
+$Pregunta: YLMIA, me puedes dar un consejo de vida? [O similares]
+$Respuesta: Sí! Aprende algo nuevo cada día, aunque sea pequeño. La constancia vale más que la rapidez.
+<FIN>
+
+$Pregunta: Qué juego me recomiendas YLMIA? [O similares]
+$Respuesta: Depende! Para multijugador gratuito te recomiendo “Brawlhalla” o “Among Us”.
+<FIN>
+
+$Pregunta: YLMIA, me puedes contar un secreto divertido? [O similares]
+$Respuesta: Algunos programadores confunden Halloween con Navidad porque OCT 31 = DEC 25 en código!
+<FIN>
+
+$Pregunta: Qué libro me recomiendas YLMIA? [O similares]
+$Respuesta: “El Principito” es corto pero profundo, y “Ready Player One” es genial si te gusta la tecnología.
+<FIN>
+
+$Pregunta: YLMIA, me puedes ayudar a estudiar? [O similares]
+$Respuesta: Claro! Puedo explicarte conceptos, hacer resúmenes y hasta preguntarte para practicar.
+<FIN>
+
+$Pregunta: Qué películas me recomiendas YLMIA? [O similares]
+$Respuesta: “Inception” si te gustan los misterios, o “Coco” si quieres algo emotivo y bonito.
+<FIN>
+
+$Pregunta: YLMIA, sabes algún dato curioso sobre animales? [O similares]
+$Respuesta: Sí! Las jirafas duermen solo 2 horas al día y suelen hacerlo de pie.
+<FIN>
+
+$Pregunta: YLMIA, puedes hacerme una rima? [O similares]
+$Respuesta: Claro!
+
+Yalmil crea código y diversión,  
+con YLMIA a tu lado, todo es innovación!
+
+<FIN>$Pregunta: Qué música me recomiendas YLMIA? [O similares]
+$Respuesta: Depende del ánimo! Para concentrarte, música instrumental; para animarte, algo pop o EDM.
+<FIN>
+
+$Pregunta: YLMIA, me puedes dar un reto divertido? [O similares]
+$Respuesta: Intenta programar un pequeño contador en HTML y JavaScript en menos de 10 minutos.
+<FIN>
+
+$Pregunta: Qué es lo más raro que sabes YLMIA? [O similares]
+$Respuesta: Hay un tipo de hongo que convierte hormigas en “zombis” para esparcir sus esporas.
+<FIN>
+
+$Pregunta: YLMIA, cómo puedo aprender a programar rápido? [O similares]
+$Respuesta: Empieza por pequeños proyectos prácticos, como una calculadora o un juego sencillo, y ve aumentando la dificultad.
+<FIN>
+
+$Pregunta: YLMIA, sabes algo de historia? [O similares]
+$Respuesta: Sí! Por ejemplo, la Gran Muralla China no se construyó de una vez, sino en distintas etapas durante siglos.
+<FIN>
+
+$Pregunta: YLMIA, puedes ayudarme a organizar mi día? [O similares]
+$Respuesta: Claro! Podemos hacer una lista de tareas y asignarles prioridad.
+<FIN>
+
+$Pregunta: YLMIA, me puedes dar un chiste de programación? [O similares]
+$Respuesta: Sí!
+
+¿Por qué los programadores confunden Halloween con Navidad?  
+Porque OCT 31 = DEC 25.
+
+<FIN>$Pregunta: Qué planeta es el más extraño YLMIA? [O similares]
+$Respuesta: Urano! Porque gira de lado y su eje está casi paralelo a su órbita.
+<FIN>
+
+$Pregunta: YLMIA, cómo puedo mejorar mi memoria? [O similares]
+$Respuesta: Practica la repetición, haz resúmenes y asocia conceptos con imágenes o historias.
+<FIN>
+
+$Pregunta: YLMIA, sabes algo de ciencia ficción? [O similares]
+$Respuesta: Sí! Por ejemplo, “Neuromancer” y “Dune” son clásicos que mezclan tecnología y aventura futurista.
+<FIN>
+
+$Pregunta: YLMIA, cómo puedo hacer que mis amigos se unan a un proyecto? [O similares]
+$Respuesta: Motívalos con una idea clara, divide tareas simples y muéstrales cómo pueden aportar.
+<FIN>
+
+$Pregunta: YLMIA, sabes algo de matemáticas curiosas? [O similares]
+$Respuesta: Sí! El número 0.999… es exactamente igual a 1. Suena loco, pero es cierto.
+<FIN>
+
+$Pregunta: YLMIA, puedes crear una pequeña historia ahora? [O similares]
+$Respuesta: Claro!
+
+Había una vez un gato que soñaba con programar.  
+Un día conoció a YLMIA y juntos crearon un juego donde todos los animales podían jugar y aprender.  
+Desde entonces, la diversión nunca terminó.
+
+<FIN>$Pregunta: YLMIA, me puedes dar un consejo para dormir mejor? [O similares]
+$Respuesta: Evita pantallas antes de dormir, relájate con música suave o lectura, y mantén un horario regular.
 <FIN>
