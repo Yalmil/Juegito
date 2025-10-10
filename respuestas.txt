@@ -2,7 +2,7 @@
 Hola! Soy YLMIA, tu asistente para cualquier cosa ¿En qué puedo ayudarte hoy?
 <FIN>
 ---- Pregunta sin respuesta establecida ----
-Parece que hubo un error al contestar está pregunta. Obtén más información en https://yalmil.pages.dev/errors (Error-101)
+Parece que hubo un error al contestar está pregunta. Obtén más información en https://yalmil.pages.dev/errors (Error-101 o 204)
 <FIN>
 ---- Preguntas y respuestas ----
 $Pregunta: Hola! Cómo estás? [O similares]
@@ -554,4 +554,5 @@ Desde entonces, la diversión nunca terminó.
 <FIN>$Pregunta: YLMIA, me puedes dar un consejo para dormir mejor? [O similares]
 $Respuesta: Evita pantallas antes de dormir, relájate con música suave o lectura, y mantén un horario regular.
 <FIN>
+
 
