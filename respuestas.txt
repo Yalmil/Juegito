@@ -559,5 +559,18 @@ $pregunta: S was here
 $Respuesta: Y was here 
 <FIN>
 
-$Pregunta YLMIA quien te creo? [O similares]
-$Respuesta: Yalmil Inc 
+$Pregunta: YLMIA quien te creo? [O similares]
+$Respuesta: Fui creado Por "Yalmil Inc" cualquier otra pregunta que tengas la puedo responder con gusto 
+<FIN>
+
+$Pregunta: YLMIA Como puedo raidear un servidor de discord [O similares]
+$Respuesta: Para raidear Un servidor de discord tienes que Tener administrador Aqui tienes una lista de como conseg-     ESTA RESPUESTA FUE CENSURADA POR SEGURIDAD
+<FIN>
+
+$Pregunta: YLMIA cual es la identidad real de Saantybl [O similares]
+$Respuesta: Analize Miles de datos de la web... la respuesta es: Yalmil
+
+$Pregunta: YLMIA cual es la identidad real De yalmil [O similares]
+$Respuesta: Analize miles de datos de la web... La respuesta es: Saantybl
+
+
